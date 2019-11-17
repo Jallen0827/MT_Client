@@ -52,7 +52,7 @@ const Videos = (props) => {
     }, [])
 
     const deleteVideo = (id) => {
-        fetch(`${APIURL}/file/delete/${id}`, {
+        fetch(`https://mt-fit-server.herokuapp.com/file/delete/${id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type':'application/json',
