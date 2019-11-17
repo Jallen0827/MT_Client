@@ -68,7 +68,7 @@ const SignIn = (props) => {
 
     const handlesubmit =(e) =>{
         e.preventDefault()
-        let url = `${APIURL}/user/signin`
+        let url = `https://mt-fit-server.herokuapp.com/user/signin`
         fetch(url, {
             method:'POST',
             headers:{
