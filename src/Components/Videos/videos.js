@@ -33,7 +33,7 @@ const Videos = (props) => {
     const [videos, setVideos] = useState([])
 
     const fetchVideos=()=>{
-        fetch(`${APIURL}/file/all`, {
+        fetch(`https://mt-fit-server.herokuapp.com/file/all`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',
