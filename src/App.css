@@ -1,22 +1,23 @@
+body{
+  background-color: rgb(173,216,230);
+  margin: 0 auto;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+h2{
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 4px;
+  color: rgb(255,151,24) ;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.container{
+  margin: 0 auto;
 }
