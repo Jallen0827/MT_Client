@@ -88,7 +88,7 @@ const Upload = (props) => {
         formData.append('file', file[8])
         formData.append('file', file[9])
 
-        fetch(`https://mt-fit-server.herokuapp.com/file/upload`, {
+        fetch(`${APIURL}/file/upload`, {
             method:'POST',
             headers:new Headers({
                 'Authorization': props.token                                

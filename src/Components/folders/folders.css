@@ -1,0 +1,48 @@
+.folders{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+}
+
+.folders ul{
+    list-style-type: none;
+}
+
+.sidebar-route{
+    flex: 1;
+}
+
+.sidebar-list-styling{
+    padding-top: 5vh;
+    width: 100%;
+    background-color: white;
+    border-right: 3px black;
+    color: white;
+    min-height: 100vh;
+    text-align: left;
+}
+
+.sidebar-list li{
+    width: 80%;
+    background-color: lightblue;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.sidebar-list li:hover{
+    background-color: rgba(173, 216, 230, 0.562);
+}
+
+.sidebar-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 3rem;
+
+}
+
+

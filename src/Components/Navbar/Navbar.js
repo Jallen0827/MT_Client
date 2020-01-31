@@ -23,7 +23,14 @@ const useStyles = makeStyles(theme => ({
       marginRight: theme.spacing(2),
     },
     navbar:{
-      backgroundColor: 'whitesmoke'
+      // backgroundColor: '#000000',
+      // backgroundImage: 'linear-gradient(315deg, #000000 0%, #414141 74%)',
+      // backgroundColor: 'rgb(173,216,230)',
+      backgroundColor: 'lightblue',
+      textOverflow: 'ellipsis',
+      whiteSpace:'nowrap',
+      // width: '100%',
+
     }
   }));
 
@@ -35,13 +42,14 @@ const Navbar = (props)=>{
         <AppBar className={classes.navbar}position="static">
         <Toolbar>
         <Grid item xs={1}>
-          <img className={classes.logo} src={Logo} alt='Logo' onClick={props.logoutCount}/>    
+          {/* <img className={classes.logo} src={Logo} alt='Logo' onClick={props.logoutCount}/>     */}
         </Grid>
         <Grid item xs={10}>
+          <h1>Jordan YMCA MultiFit</h1>
         </Grid>
           <Grid item xs={"auto"}>
-          {props.token ? <Button className={classes.button} onClick={props.clearToken}>Logout</Button>
-                      : <SignIn className={classes.button} updateToken= {props.updateToken}/>}          
+          {/* {props.token ? <Button className={classes.button} onClick={props.clearToken}>Logout</Button>
+                      : <SignIn className={classes.button} updateToken= {props.updateToken}/>}           */}
           </Grid>
         </Toolbar>
       </AppBar>
