@@ -1,7 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
+
 import './App.css';
+
 import Navbar from './Components/Navbar/Navbar';
 import Videos from './Components/Videos/videos'
+import Person from './Components/folders/folders'
 
 function App() {
   const [sessionToken, setSessionToken] = useState(false)
@@ -25,8 +31,11 @@ function App() {
   return (
     <div className="App">
       <Navbar updateToken={updateToken} clearToken={clearToken} token={sessionToken}/>
-      <h1>JORDAN YMCA MULTIFIT SWIM VIDEOS</h1>
-      <Videos token={sessionToken}/>
+      
+      {/* <Videos token={sessionToken}/> */}
+      <Router>
+        <Person token={sessionToken}/>
+      </Router>
     </div>
   );
 }
