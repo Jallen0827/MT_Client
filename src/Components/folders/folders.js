@@ -10,7 +10,6 @@ import Videos from '../Videos/videos'
 
 import './folders.css'
 import APIURL from '../../helpers/env'
-import Folder from '../../Assests/folder.png'
 
 
 const Person = (props) => {
