@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css'
-import Upload from '../Videos/upload'
+// import Upload from '../Videos/upload'
 
 const Home = (props) => {
     return (
