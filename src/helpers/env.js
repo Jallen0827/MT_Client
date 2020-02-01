@@ -10,6 +10,8 @@ switch (window.location.hostname) {
     case 'mt-fit-server.herokuapp.com':
         // this is the full url of your deployed API
         APIURL = 'https://mt-fit-server.herokuapp.com'
+    default :
+        APIURL = 'https://mt-fit-server.herokuapp.com'
 }
 
 export default APIURL;

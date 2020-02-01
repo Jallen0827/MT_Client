@@ -91,7 +91,6 @@ const Videos = (props) => {
     }
 
     const postComment = () => {
-        console.log('hello')
         fetch(`${APIURL}/comments/comments/${props.perId}`, {
             method: 'POST', 
             headers: {
@@ -102,7 +101,6 @@ const Videos = (props) => {
             })
         }).then(res => res.json())
         .then(data => {
-            console.log(data)
             fetchComments()
         })
     }
@@ -117,21 +115,8 @@ const Videos = (props) => {
         }).then(res=> res.json())
         .then(data=>{
             setComments(data)
-            // console.log(data)
-            // console.log(data[0].createdAt.split('T')[0])
         })
-    }        
-
-    // const editTitle = (id) =>{
-    //     fetch(`http://localhost:3002/file/update/${id}`, {
-    //         method: 'PUT',
-    //         headers: new Headers({
-    //             'Content-Type':'application/json',
-    //             'Authorization':props.token 
-    //         })
-    //     })
-    //     .then(()=>fetchVideos())
-    // }
+    }
 
     return (
         <div>
