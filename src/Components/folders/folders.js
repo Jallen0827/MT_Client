@@ -16,7 +16,7 @@ const Person = (props) => {
     const [person, setPerson] = useState([])
 
     const fetchPerson=()=>{
-        fetch(`${APIURL}/person/all`, {
+        fetch(`https://mt-fit-server.herokuapp.com/person/all`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',
