@@ -23,20 +23,14 @@ const useStyles = makeStyles(theme => ({
       marginRight: theme.spacing(2),
     },
     navbar:{
-      // backgroundColor: '#000000',
-      // backgroundImage: 'linear-gradient(315deg, #000000 0%, #414141 74%)',
-      // backgroundColor: 'rgb(173,216,230)',
       backgroundColor: 'lightblue',
       textOverflow: 'ellipsis',
       whiteSpace:'nowrap',
-      // width: '100%',
-
     }
   }));
 
 const Navbar = (props)=>{
     const classes = useStyles()
-    // console.log(props.token)
     return(
       <>
         <AppBar className={classes.navbar}position="static">

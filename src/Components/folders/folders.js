@@ -25,8 +25,6 @@ const Person = (props) => {
         }).then(res=> res.json())
         .then(data=>{
             setPerson(data)
-            console.log(data)
-            // console.log(data[0].createdAt.split('T')[0])
         })
     }
 
