@@ -6,7 +6,7 @@ import {
 import './App.css';
 
 import Navbar from './Components/Navbar/Navbar';
-import Videos from './Components/Videos/videos'
+// import Videos from './Components/Videos/videos'
 import Person from './Components/folders/folders'
 
 function App() {
