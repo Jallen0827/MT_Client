@@ -27,11 +27,8 @@ const useStyles = makeStyles(theme => ({
       padding: theme.spacing(2),
       textAlign: 'center',
       backgroundColor: 'whitesmoke',
-    //   backgroundColor: '#000000',
-    //   backgroundImage: 'linear-gradient(315deg, #000000 0%, #414141 74%)',
       width: 350,
       hight: 350,
-    //   color: 'white'
     },
     container: {
         // alignItems: 'center'

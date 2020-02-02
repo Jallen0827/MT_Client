@@ -1,14 +1,16 @@
 import React from 'react'
 import './home.css'
-// import Upload from '../Videos/upload'
+import Meme from '../../Assests/SwimMeme.jpg'
 
 const Home = (props) => {
     return (
         <div className='home'>
-            <h2>Announcements</h2>
+            <img src={Meme} alt="Swim meme"/>
+            <h4>Announcements</h4>
             <hr/>
-            {/* <hr/> */}
-            {/* {props.token ? <Upload token={props.token}/> : null} */}
+            <ul>
+                <li>We will film videos again on February 24th, 25th, and 26th</li>
+            </ul>
         </div>
     )
 }

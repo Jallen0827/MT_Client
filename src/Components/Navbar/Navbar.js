@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: 'lightblue',
       textOverflow: 'ellipsis',
       whiteSpace:'nowrap',
+      width: '100%'
     }
   }));
 

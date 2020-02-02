@@ -1,3 +1,13 @@
 .home{
     width: 70vw;
 }
+
+.home img{
+    margin-top: 6vh;
+    width: 20vw;
+}
+
+.home ul{
+    text-transform: none;
+    font-size: x-small;
+}
